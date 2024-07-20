@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: rgb(2, 0, 36);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.playerContainer {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.playerBox {
+  width: 300px;
+  height: 400px;
+  background: rgb(8, 5, 68);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.activePlayer {
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+}
+
+.playerName {
+  font-size: 35px;
+  letter-spacing: 4px;
+  word-spacing: 2px;
+  margin-top: 20px;
+}
+
+.score {
+  font-size: 48px;
+  font-weight: bold;
+  color: #00d4ff;
+  margin-bottom: 20px;
+}
+
+.current {
+  background-color: #00d4ff;
+  padding: 15px 30px;
+  border-radius: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+.currentLabel {
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.currentScore {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.diceContainer {
+  margin-bottom: 40px;
+}
+
+.dice {
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+.dice-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.reset-btn {
+  margin-bottom: 50px;
+}
+
+.btn {
+  padding: 12px 12px;
+  width: 150px;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #00d4ff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #090979;
+  transform: translateY(-2px);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+.player-winner .playerBox {
+  background-color: #94bbe9;
+}
+
+.player-winner .score {
+  color: #ffffff;
+}
+
+.hidden {
+  display: none;
+}
