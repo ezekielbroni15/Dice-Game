@@ -49,7 +49,7 @@ btnRoll.addEventListener("click", function () {
     diceEl.classList.remove("hidden");
 
   const dice = Math.trunc(Math.random() * 6) + 1;
-  diceEl.src = `../images/dice-${dice}.png`;
+  diceEl.src = `./images/dice-${dice}.png`;
 
   if (dice !== 1) {
     currentScore += dice;
@@ -68,7 +68,7 @@ btnHold.addEventListener('click', function() {
         scores[activePlayer] += currentScore;
     document.querySelector(`.score_${activePlayer}`).textContent = scores[activePlayer];
     
-    if(scores[activePlayer] >= 20){
+    if(scores[activePlayer] >= 100){
         playGame = false;
         document.querySelector(`.player_${activePlayer}`).classList.add('player-winner');
         document.querySelector(`.player_${activePlayer}`).classList.add('activePlayer');
